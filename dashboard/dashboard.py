@@ -50,7 +50,7 @@ def create_wind_min_max_df(df):
     return min_max_wind_df
 
 # Membaca data dan memastikan format datetime
-all_df = pd.read_csv("day.csv")
+all_df = pd.read_csv("dashboard/day.csv")
 all_df["dteday"] = pd.to_datetime(all_df["dteday"])  # Konversi ke datetime
 
 min_date = all_df["dteday"].min()
